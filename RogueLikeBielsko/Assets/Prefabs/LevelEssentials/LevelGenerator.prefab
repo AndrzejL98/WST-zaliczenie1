@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8461299903261316044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8461299903261316045}
+  m_Layer: 0
+  m_Name: GeneratorPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8461299903261316045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8461299903261316044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8461299904106718006}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8461299904106718004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8461299904106718006}
+  - component: {fileID: 8461299904106718005}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8461299904106718006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8461299904106718004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8461299903261316045}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8461299904106718005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8461299904106718004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06cd488d3dc257e48a9c29dbd3ae7a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layoutRoom: {fileID: 1561752588368735260, guid: 6053db27c50762347b1351dcd9107ee8,
+    type: 3}
+  startColor: {r: 0, g: 0.92376757, b: 1, a: 1}
+  endColor: {r: 1, g: 0, b: 0, a: 1}
+  shopColor: {r: 1, g: 0.9982565, b: 0, a: 1}
+  gunRoomColor: {r: 0, g: 1, b: 0.14618587, a: 1}
+  distanceToEnd: 20
+  includeShop: 1
+  minDistanceToShop: 7
+  maxDistanceToShop: 15
+  includeGunRoom: 1
+  minDistanceToGunRoom: 4
+  maxDistanceToGunRoom: 16
+  generatorPoint: {fileID: 8461299903261316045}
+  selectedDirection: 3
+  xOffset: 18
+  yOffset: 10
+  whatIsRoom:
+    serializedVersion: 2
+    m_Bits: 32768
+  rooms:
+    singleUp: {fileID: 1003083702551641289, guid: 465f2a051cfc76443b13f9f65a31e818,
+      type: 3}
+    singleDown: {fileID: 3192966283114511610, guid: 94c665c187d243a4ea54783ae3192aa4,
+      type: 3}
+    singleLeft: {fileID: 777788717260313130, guid: 97019a0ce67195349b59615f0e6da764,
+      type: 3}
+    singleRight: {fileID: 3827662667787045151, guid: 1c8cdd6270627fb42a6f94ecd0036aa9,
+      type: 3}
+    doubleLeftRight: {fileID: 3863674319477782887, guid: 17b72d01dadbd814797807f17756fd33,
+      type: 3}
+    doubleUpDown: {fileID: 6756536734208952893, guid: 1eb3b664b16828e45ae552d0f452a0cc,
+      type: 3}
+    doubleRightUp: {fileID: 7670887446891072149, guid: 4e41346df0ad8034ba18a21e177ac292,
+      type: 3}
+    doubleRightdown: {fileID: 2871106961928076257, guid: 8c67e2d0e68f60e4f8227841b9d7a1cc,
+      type: 3}
+    doubleLeftUp: {fileID: 4812703425980459656, guid: 83aa6404f5826b447ace4a99539e9c3d,
+      type: 3}
+    doubleLeftDown: {fileID: 8481784698636056138, guid: a2cecebd1634b9d41957c1b9c5f8d924,
+      type: 3}
+    tripleUpRightDown: {fileID: 8277957437980556138, guid: 2d15003bbf12fa34abbe5522b93f2030,
+      type: 3}
+    tripleRightDownLeft: {fileID: 5993958194760040081, guid: dcf334d7593fb134ba2ebf6fe4177a43,
+      type: 3}
+    tripleDownLeftUp: {fileID: 48773061250509280, guid: b57c0d6f5c0b65f4cba94cb2b3effe6e,
+      type: 3}
+    tripleLeftUpRight: {fileID: 6083494977472142340, guid: 93b605ee5692a2041a3e3f14a6d0dfc4,
+      type: 3}
+    fourway: {fileID: 5598412052472727149, guid: 371a09481b267c246a366032d9dfc2fd,
+      type: 3}
+  centerStart: {fileID: 7563159483363878905, guid: 838484be1f5fdfb4fbdea7c62ee64ef5,
+    type: 3}
+  centerEnd: {fileID: 8351397643076764172, guid: bd4aace32a5da31469a983e4d52865f6,
+    type: 3}
+  centerShop: {fileID: 2323098908949087192, guid: c1739fa4b4a582c4dbdd8314f97a10f4,
+    type: 3}
+  centerGunRoom: {fileID: 2009248330259360413, guid: 8e6d63454801b684db6e41c02baf99ac,
+    type: 3}
+  potentialCenters:
+  - {fileID: 6342818530236081748, guid: ca90864a8e5f9f5428847e66e9ab2359, type: 3}
+  - {fileID: 8362296586358162916, guid: ecddf330c4ebe3f4ba144ff422b14c1a, type: 3}
+  - {fileID: 9178437927178517364, guid: 97128b360c53f6a4c8e64018c4628739, type: 3}
+  - {fileID: 2687074816441143731, guid: 7754f47f0fb9f0d4e97db624c50f2abb, type: 3}
+  - {fileID: 4916723048808448518, guid: 96041488d5b89904fadbcf16b5242b27, type: 3}
+  - {fileID: 6268945738940609264, guid: b7a856f3c6d8fe94c866643f05aaf442, type: 3}
+  - {fileID: 7588983494643490025, guid: 4b7dcfaa04c891c43b1330d120e97c56, type: 3}
+  - {fileID: 8378091374946777748, guid: 51b8d88d8a9c1c041beea616723bcfd4, type: 3}
+  - {fileID: 7655598443581403099, guid: 6e6eb3bb1cdedd1449d6da391c090ac7, type: 3}
+  - {fileID: 3868328694100682225, guid: 5c61820e722cbf44a98656d42aba675a, type: 3}
+  - {fileID: 3116901159473740125, guid: 85c1bc57cc7deb341af069bddb694c89, type: 3}
